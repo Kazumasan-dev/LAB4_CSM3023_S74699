@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!--
+    Document   : customer.html
+    Author     : MUHAMMAD AIMAN BIN ZAMRI
+    Course     : CSM3023
+    Matric No  : S74699
+-->
+<html>
+    <head>
+        <link rel="Stylesheet" href="style.css">
+        <title>Customer form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Use JSP Scriplet and JSP Expression in Application</h1>
+        <div class="card">
+            <!--Form title-->
+            <h2  class="form-title"> Customer Purchase</h2>
+            <!--Form for customer -->
+            <form  action="processCustomer.jsp" method="post">
+                <!--input field for customer code -->
+                <div class="form-group">
+                    <label for="customercode"> Customer Code: </label>
+                    <input type="text" name="customerCode">
+                </div >
+                <!--input field for quantity -->
+                <div class="form-group">
+                  <label for="quantity"> Quantity: </label>
+                  <input type="number" name="quantity"><br><br>
+                </div>
+                <!--radio button  customer type -->
+                <div class="form-group">
+                    <label > Customer Type: </label>
+                    <div class="radio-group" >
+                        <label class="radio-label"> 
+                            <input type="radio" name="customerType" value="1"> Normal
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="customerType" value="2"> Privilege 
+                        </label >
+                        
+                    </div>
+                 </div>
+            
+                
+                
+                <div class="button-group"><!-- comment -->
+                    <div class="btn">
+                        <!--Button Submit -->
+                        <input class="btn-submit" type="submit" value="Submit">
+                        <!--Button Cancel -->
+                        <input class="btn-cancel" type="reset"  value="Cancel">
+                        
+                    </div>           
+                   
+                </div>
+              
+            </form>
+        </div>
+    </body>
+</html>
